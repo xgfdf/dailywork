@@ -46,4 +46,7 @@ public class Book {
 	public String toString() {
 		return id + ":" + name + ":" + price;
 	}
+	public void show(){
+		System.out.println(id+name+price);
+	}
 }

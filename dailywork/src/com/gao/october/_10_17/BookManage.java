@@ -38,6 +38,7 @@ public class BookManage {
 	public static void query2(String id) {
 		Book b = map.get(id);
 		System.out.println(b.toString());
+
 	}
 	
 	//删除
@@ -52,12 +53,13 @@ public class BookManage {
 	public static void main(String[] args) {
 		Book b1 = new Book("b001", "杀死一个程序员", 20.00);
 		Book b2 = new Book("b002", "西游记", 25.00);
-		Book b5 = new Book("b005","生死疲劳",15);
+		b1.show();
+
 
 		//添加图书
 		add(b1);
 		add(b2);
-		add(b5);
+
 		
 		//修改图书
 		update(new Book("b001", "杀死一群程序员", 100.00));
